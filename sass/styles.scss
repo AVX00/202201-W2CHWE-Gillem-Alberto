@@ -1,6 +1,9 @@
 :root {
   --backgrey: #c0c0c0;
   --qualityelements: #808080;
+  --header-bg: #f8f8f8;
+  --search-bar-bg: #bbb8b6;
+  --cart-count-bg: #ff5959;
 }
 
 html {
@@ -8,14 +11,62 @@ html {
   align-items: center;
   justify-content: center;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .navigation-bar {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-}
-
-.navigation-bar {
   border: 2px solid red;
+  background-color: var(--header-bg);
+  .burger {
+    color: var(--cart-count-bg);
+    transition: all 0.6s ease-out;
+  }
+  .burger:hover {
+    color: #000;
+  }
+  .navigation-bar__icon {
+    height: 49px;
+    width: 49px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+  }
+  .navigation-bar__icon--search {
+    background-color: var(--search-bar-bg);
+    color: var(--header-bg);
+  }
+  .navigation-bar__icon--cart-count {
+    background-color: var(--cart-count-bg);
+    font-weight: bold;
+    color: var(--header-bg);
+  }
+  .navigation-bar__icon--shop-cart {
+    .shop-cart {
+      background: url("https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/sprite.svg") -66px
+        10px;
+      width: 50px;
+      height: 50px;
+    }
+    &:hover {
+      background-color: var(--cart-count-bg);
+      & .shop-cart {
+        background: url("https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/sprite.svg") -105px
+          10px;
+      }
+    }
+  }
+  .horizontal-link-list {
+    height: 100%;
+    margin-bottom: 0;
+  }
 }
 
 .content {
