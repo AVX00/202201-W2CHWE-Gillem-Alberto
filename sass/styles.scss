@@ -4,6 +4,8 @@
   --header-bg: #f8f8f8;
   --search-bar-bg: #bbb8b6;
   --cart-count-bg: #ff5959;
+  --overlay-bg: #ffffffbf;
+  --subsection-title-color: #67635f;
 }
 
 html {
@@ -130,4 +132,44 @@ a {
 }
 .footer__autory p {
   text-align: center;
+}
+
+@mixin overlay {
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: 0;
+  right: 50%;
+  background-color: var(--overlay-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &__subsection {
+    position: relative;
+  }
+  &__subsection-title {
+    text-align: center;
+    font-weight: bold;
+    color: var(--subsection-title-color);
+  }
+  &__title {
+    padding: 0 2rem;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    font-size: 3rem;
+    margin: 2rem 0;
+    text-align: center;
+  }
+}
+.subsection {
+  &__overlay {
+    @include overlay();
+  }
 }
