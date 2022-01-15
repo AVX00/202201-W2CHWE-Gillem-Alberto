@@ -1,17 +1,78 @@
-/* Error: expected "{".
- *   ,
- * 6 | @use "header";
- *   |              ^
- *   '
- *   styles.scss 6:14  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a   \2577 \a 6 \2502  @use "header";\a   \2502               ^\a   \2575 \a   styles.scss 6:14  root stylesheet';
+:root {
+  --backgrey: #c0c0c0;
+  --qualityelements: #808080;
 }
+
+html {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation-bar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.navigation-bar {
+  border: 2px solid red;
+}
+
+.content {
+  border: 2px solid green;
+}
+
+.logo {
+  border: 2px solid red;
+}
+
+.article {
+  border: 2px solid blue;
+}
+
+.footer {
+  border: 2px solid red;
+}
+
+.quality-check {
+  background-color: var(--backgrey);
+  display: flex;
+  flex-direction: row;
+  border: none;
+  box-sizing: border-box;
+}
+
+.quality-check__box {
+  border: none;
+  padding: 0px;
+  padding-top: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.quality-check__box > * {
+  color: var(--qualityelements);
+  text-align: center;
+}
+
+.quality-check__box__p1 {
+  font-size: 10px;
+}
+
+.quality-check__box__p2 {
+  font-size: 6px;
+}
+
+.quality-check__box__i {
+  font-size: 20px;
+}
+
+.footer__autory {
+  background-color: red;
+  color: white;
+}
+
+/*# sourceMappingURL=styles.css.map */
