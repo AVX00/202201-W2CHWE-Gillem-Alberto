@@ -262,3 +262,10 @@ a {
     @include overlay();
   }
 }
+
+.content-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0;
+}
