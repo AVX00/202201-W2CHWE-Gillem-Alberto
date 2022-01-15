@@ -19,16 +19,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="sass/styles.css" />
     <link rel="shortcut icon" type="image/jpg" href="assets/favicon.ico" />
     <title>Lunarillos</title>
   </head>
   <body>
-    <header class="navigation-bar">
-      <checkbox class="burger "><img src="burger_menu.png" alt="menu"></checkbox>
-      <nav>
-        <li><a href="" class="navigation-bar__icon"><img src="assets/user.png" alt="entrar | registrarse"></a></li>
-        <li>
+    <header class="navigation-bar row">
+      <checkbox class="burger col"><img src="assets/burger_menu.png" alt="menu"></checkbox>
+      <nav class="col row">
+        <ul>
+        <li class="col"><a href="" class="navigation-bar__icon"><img src="assets/user.png" alt="entrar | registrarse"></a></li>
+        <li class="col">
           <i class="fas fa-search"></i>
           
         </li>
@@ -36,6 +37,7 @@
           <a href="" class="navigation-bar__icon navigation-bar__icon--shop-cart"><img src="assets/carrito.png" alt="Cesta de la compra"></a>
           <a href="" class="navigation-bar__icon navigation-bar__ican--cart-count">0</a>
         </li>
+      </ul>
       </nav>
 
     </header>
