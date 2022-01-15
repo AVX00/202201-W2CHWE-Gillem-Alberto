@@ -1,8 +1,15 @@
 :root {
+
   --backgrey: #c2c9d6;
   --qualityelements: #67635f;
   --webred: #ff5959;
-  --webbackcolor: #f8f9fc;
+  --webbackcolor: #f8f9fc;  
+  --header-bg: #f8f8f8;
+  --search-bar-bg: #bbb8b6;
+  --cart-count-bg: #ff5959;
+  --overlay-bg: #ffffffbf;
+  --subsection-title-color: #67635f;
+
 }
 
 html {
@@ -11,14 +18,62 @@ html {
   justify-content: center;
   font-family: "Source Sans Pro", sans serif;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .navigation-bar {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-}
-
-.navigation-bar {
   border: 2px solid red;
+  background-color: var(--header-bg);
+  .burger {
+    color: var(--cart-count-bg);
+    transition: all 0.6s ease-out;
+  }
+  .burger:hover {
+    color: #000;
+  }
+  .navigation-bar__icon {
+    height: 49px;
+    width: 49px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+  }
+  .navigation-bar__icon--search {
+    background-color: var(--search-bar-bg);
+    color: var(--header-bg);
+  }
+  .navigation-bar__icon--cart-count {
+    background-color: var(--cart-count-bg);
+    font-weight: bold;
+    color: var(--header-bg);
+  }
+  .navigation-bar__icon--shop-cart {
+    .shop-cart {
+      background: url("https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/sprite.svg") -66px
+        10px;
+      width: 50px;
+      height: 50px;
+    }
+    &:hover {
+      background-color: var(--cart-count-bg);
+      & .shop-cart {
+        background: url("https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/sprite.svg") -105px
+          10px;
+      }
+    }
+  }
+  .horizontal-link-list {
+    height: 100%;
+    margin-bottom: 0;
+  }
 }
 
 .content {
@@ -166,4 +221,44 @@ html {
 }
 .footer__autory p {
   text-align: center;
+}
+
+@mixin overlay {
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: 0;
+  right: 50%;
+  background-color: var(--overlay-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &__subsection {
+    position: relative;
+  }
+  &__subsection-title {
+    text-align: center;
+    font-weight: bold;
+    color: var(--subsection-title-color);
+  }
+  &__title {
+    padding: 0 2rem;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    font-size: 3rem;
+    margin: 2rem 0;
+    text-align: center;
+  }
+}
+.subsection {
+  &__overlay {
+    @include overlay();
+  }
 }
