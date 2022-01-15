@@ -2,8 +2,8 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/4c43d55a1e.js" crossorigin="anonymous"></script>
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -16,37 +16,31 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="sass/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/jpg" href="assets/favicon.ico" />
     <title>Lunarillos</title>
   </head>
   <body>
-    <header class="navigation-bar row">
-      <div class="col-1 offset-3">
-        <checkbox class="burger"></checkbox>
-      </div>
-      <div class="col-1 offset-1">
-        <a href="assets/user.png" class="navigation-bar__icon"></a>
-      </div>
-      <div class="col-3 offset-1">
-        <nav class="list-unstyled">
-          <li>
-            <a href="" class="navigation-bar__icon">
-            <img src="assets/user.png"/>
-            </a>
-          </li>
-          <li>
-            <a href="" class="navigation-bar__icon"></a>
-            <img src="assets/search-solid.svg"/>
-          </li>
-          <li>
-            <a href=""
-              class="navigation-bar__icon navigation-bar__icon--shop-cart"
-              >0</a
-            >
-            <img src="assets/carrito.png"/>
-          </li>
-        </nav>
-      </div>
+    <header class="navigation-bar">
+      <checkbox class="burger "></checkbox>
+      <nav>
+        <li><a href="assets/user.png" class="navigation-bar__icon"></a></li>
+        <li><a href="" class="navigation-bar__icon"></a></li>
+        <li>
+          <i class="fas fa-search"></i>
+          <a href="assets/carrito.png" class="navigation-bar__icon"></a></li>
+        <li>
+          <a
+            href=""
+            class="navigation-bar__icon navigation-bar__icon--shop-cart"
+            >0</a
+          >
+        </li>
+      </nav>
+
     </header>
     <main class="content">
       <header class="logo">
