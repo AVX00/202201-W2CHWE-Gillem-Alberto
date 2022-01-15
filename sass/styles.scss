@@ -1,12 +1,15 @@
 :root {
-  --backgrey: #c0c0c0;
-  --qualityelements: #808080;
+  --backgrey: #c2c9d6;
+  --qualityelements: #67635f;
+  --webred: #ff5959;
+  --webbackcolor: #f8f9fc;
 }
 
 html {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Source Sans Pro", sans serif;
 }
 .navigation-bar {
   display: flex;
@@ -69,10 +72,27 @@ html {
   font-size: 20px;
 }
 
-.contact-icon {
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 25px;
+  padding-top: 45px;
+  background-color: var(--webbackcolor);
+}
+
+.siguenos {
+  font-size: 14px;
+  color: var(--qualityelements);
+}
+
+.siguenos-icon {
   height: 32px;
-  width: 33px;
-  display: block;
+  width: 165px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .contacto-fb {
@@ -81,11 +101,87 @@ html {
 }
 
 .contacto-tw {
-  background: url("https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/sprite.svg") -35px -494px;
+  background: url(https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/sprite.svg) -35px -494px
+    no-repeat;
+}
+
+.contacto-insta {
+  background: url(https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/sprite.svg) -70px -494px
+    no-repeat;
+}
+
+.contacto-insta {
+  background: url(https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/sprite.svg) -70px -494px
+    no-repeat;
+}
+
+.contacto-pint {
+  background: url(https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/sprite.svg) -106px -494px
+    no-repeat;
+}
+
+.contacto-you {
+  background: url(https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/sprite.svg) -176px -494px
+    no-repeat;
+}
+
+.subscribe::before {
+  border-bottom: 1px solid darkgrey;
+  margin: 140px 0;
+  width: 420px;
+  padding-bottom: 35px;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--webbackcolor);
+}
+
+.subscribe-text {
+  font-size: 14px;
+  color: var(--qualityelements);
+}
+
+.otros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--webred);
+  background-color: var(--webbackcolor);
+}
+
+.otros-box {
+  height: 30px;
+  width: 31px;
+}
+
+.email,
+.aboutus,
+.condiciones {
+  font-size: 14px;
+}
+
+.email-i {
+  background: url(https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/sprite.svg)
+    0px -207px no-repeat;
+}
+
+.about-i {
+  background: url(https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/sprite.svg)
+    0px -246px no-repeat;
+}
+
+.condiciones-i {
+  background: url(https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/sprite.svg)
+    0px -285px no-repeat;
 }
 
 .footer__autory {
-  background-color: red;
+  background-color: var(--webred);
   color: white;
   display: flex;
   justify-content: center;
