@@ -110,11 +110,6 @@ html {
     no-repeat;
 }
 
-.contacto-insta {
-  background: url(https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/sprite.svg) -70px -494px
-    no-repeat;
-}
-
 .contacto-pint {
   background: url(https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/sprite.svg) -106px -494px
     no-repeat;
@@ -152,32 +147,13 @@ html {
   align-items: center;
   color: var(--webred);
   background-color: var(--webbackcolor);
-}
-
-.otros-box {
-  height: 30px;
-  width: 31px;
+  padding: 40px;
 }
 
 .email,
 .aboutus,
 .condiciones {
   font-size: 14px;
-}
-
-.email-i {
-  background: url(https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/sprite.svg)
-    0px -207px no-repeat;
-}
-
-.about-i {
-  background: url(https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/sprite.svg)
-    0px -246px no-repeat;
-}
-
-.condiciones-i {
-  background: url(https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/sprite.svg)
-    0px -285px no-repeat;
 }
 
 .footer__autory {
