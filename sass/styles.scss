@@ -228,6 +228,13 @@ a {
   align-items: center;
   justify-content: center;
   padding-top: 2rem;
+  position: relative;
+  margin-top: 5rem;
+  & .section-icon {
+    width: 25%;
+    position: absolute;
+    top: -7rem;
+  }
   &__subsection {
     position: relative;
     padding-bottom: 1rem;
@@ -241,12 +248,16 @@ a {
     color: var(--subsection-title-color);
   }
   &__title {
-    padding: 0 2rem;
+    padding: 0.8rem 2.8rem;
     border-top: 2px solid #000;
     border-bottom: 2px solid #000;
-    font-size: 3rem;
+    font-size: 2rem;
     margin: 2rem 0;
     text-align: center;
+    margin-top: 5rem;
+  }
+  &:nth-child(2n) {
+    background-color: var(--header-bg);
   }
 }
 .subsection {
@@ -259,5 +270,5 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem 0;
+  padding: 3rem 0;
 }
