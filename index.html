@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="sass/styles.css" />
     <title>Lunarillos</title>
   </head>
-  <body>
+  <body class="container">
     <header class="navigation-bar row">
       <div class="col-1 offset-3">
         <checkbox class="burger"></checkbox>
@@ -48,7 +48,7 @@
         </nav>
       </div>
     </header>
-    <main class="content">
+    <main class="row">
       <header class="logo">
         <h1><img src="https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/logo-small.svg" alt="Logo corporativo de María Lunarillos" /></h1>
       </header>
@@ -73,23 +73,26 @@
           <p>SECCION NUESTRS MARCAS SOLO VISIBLE EN DESKTOP</p>
         </div>
       </section>
-      <footer class="footer">
-        <section class="quality-check">
-          <span class="envio quality-check__box">
-            <i class="fas fa-truck"></i>
+      <footer class="footer row">
+        <section class="quality-check row">
+          <div></div>
+          <span class="truck quality-check__box col-3 offset-2">
+            <i class="quality-check__box__i fas fa-truck"></i>
             <p class="quality-check__box__p1">ENVIOS GRATIS</p>
             <p class="quality-check__box__p2">PEDIDOS SUPERIORES A 70€</p>
           </span>
-          <span class="envio quality-check__box">
-            <i class="far fa-clock"></i>
+          <span class="envio quality-check__box col-3 offset-2">
+            <i class="quality-check__box__i far fa-clock"></i>
             <p class="quality-check__box__p1">ENVIO 24-48 HORAS</p>
             <p class="quality-check__box__p2">HAZ TU PEDIDO ANTES DE LAS 18:00H</p>
-          </span><span class="envio quality-check__box">
-            <i class="far fa-envelope"></i>
+          </span>
+          <span class="envelope quality-check__box col-3 offset-2">
+            <i class="quality-check__box__i far fa-envelope"></i>
             <p class="quality-check__box__p1">DEVOLUCIONES</p>
             <p class="quality-check__box__p2">30 DIAS PARA DEVOLVER TU COMPRA</p>
-          </span><span class="envio quality-check__box">
-            <i class="far fa-credit-card"></i>
+          </span>
+          <span class="visa quality-check__box col-3 offset-2">
+            <i class="quality-check__box__i far fa-credit-card"></i>
             <p class="quality-check__box__p1">CONTRA REEMBOLSO</p>
             <p class="quality-check__box__p2">SIN COMISION</p>
           </span>
