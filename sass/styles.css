@@ -24,6 +24,13 @@ a {
   border: 2px solid red;
   background-color: var(--header-bg);
 }
+.navigation-bar .burger {
+  color: var(--cart-count-bg);
+  transition: all 0.6s ease-out;
+}
+.navigation-bar .burger:hover {
+  color: #000;
+}
 .navigation-bar .navigation-bar__icon {
   height: 49px;
   width: 49px;
