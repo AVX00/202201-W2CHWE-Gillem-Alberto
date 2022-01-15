@@ -1,15 +1,13 @@
 :root {
-
   --backgrey: #c2c9d6;
   --qualityelements: #67635f;
   --webred: #ff5959;
-  --webbackcolor: #f8f9fc;  
+  --webbackcolor: #f8f9fc;
   --header-bg: #f8f8f8;
   --search-bar-bg: #bbb8b6;
   --cart-count-bg: #ff5959;
   --overlay-bg: #ffffffbf;
   --subsection-title-color: #67635f;
-
 }
 
 html {
@@ -28,7 +26,6 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  border: 2px solid red;
   background-color: var(--header-bg);
   .burger {
     color: var(--cart-count-bg);
@@ -76,33 +73,14 @@ a {
   }
 }
 
-.content {
-  border: 2px solid green;
-}
-
-.logo {
-  border: 2px solid red;
-}
-
-.article {
-  border: 2px solid blue;
-}
-
-.footer {
-  border: 2px solid red;
-}
-
 .quality-check {
   background-color: var(--backgrey);
-  display: flex;
-  flex-direction: row;
-  border: none;
   box-sizing: border-box;
 }
 
 .quality-check-box {
   border: none;
-  padding: 0px;
+
   padding-top: 10px;
   justify-content: center;
   align-items: center;
@@ -203,6 +181,10 @@ a {
   color: var(--webred);
   background-color: var(--webbackcolor);
   padding: 40px;
+  & * {
+    text-align: center;
+    padding-top: 1rem;
+  }
 }
 
 .email,
