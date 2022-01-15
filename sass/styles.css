@@ -1,6 +1,6 @@
 :root {
-  --backgrey: #c2c9d6;
-  --qualityelements: #67635f;
+  --backgrey: #e8e6e5;
+  --qualityelements: #67625f;
   --webred: #ff5959;
   --webbackcolor: #f8f9fc;
   --header-bg: #f8f8f8;
@@ -72,32 +72,34 @@ a {
 .quality-check {
   background-color: var(--backgrey);
   box-sizing: border-box;
+  padding-bottom: 2rem;
+  margin-top: 3rem;
 }
 
 .quality-check-box {
   border: none;
-  padding-top: 10px;
+  padding-top: 2rem;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: column;
 }
-
 .quality-check-box > * {
   color: var(--qualityelements);
   text-align: center;
 }
-
 .quality-check-box__p1 {
-  font-size: 10px;
+  font-size: 0.7rem;
 }
-
 .quality-check-box__p2 {
-  font-size: 6px;
+  font-size: 0.5rem;
 }
-
 .quality-check-box__i {
-  font-size: 20px;
+  font-size: 4rem;
+  padding-bottom: 1rem;
+}
+.quality-check-box:hover > * {
+  color: var(--cart-count-bg);
 }
 
 .contact {
@@ -201,9 +203,14 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 2rem;
 }
 .article__subsection {
   position: relative;
+  padding-bottom: 1rem;
+}
+.article__subsection:first-of-type {
+  padding-top: 3rem;
 }
 .article__subsection-title {
   text-align: center;
