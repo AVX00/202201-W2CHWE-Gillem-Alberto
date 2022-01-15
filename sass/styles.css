@@ -1,3 +1,9 @@
+html {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .navigation-bar {
   display: flex;
   flex-direction: row;
@@ -22,6 +28,11 @@
 
 .footer {
   border: 2px solid red;
+}
+
+.footer__autory {
+  background-color: red;
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */

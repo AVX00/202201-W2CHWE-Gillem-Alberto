@@ -1,3 +1,8 @@
+html {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .navigation-bar {
   display: flex;
   flex-direction: row;
@@ -24,5 +29,7 @@
   border: 2px solid red;
 }
 
-.article__subsection-title::before {
+.footer__autory {
+  background-color: red;
+  color: white;
 }
