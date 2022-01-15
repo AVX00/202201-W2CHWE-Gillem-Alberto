@@ -70,6 +70,20 @@ html {
   font-size: 20px;
 }
 
+.contact-icon {
+  height: 32px;
+  width: 33px;
+  display: block;
+}
+
+.contacto-fb {
+  background: url(https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/sprite.svg) 0px -494px no-repeat;
+}
+
+.contacto-tw {
+  background: url("https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/sprite.svg") -35px -494px;
+}
+
 .footer__autory {
   background-color: red;
   color: white;
