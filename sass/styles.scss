@@ -1,3 +1,8 @@
+:root {
+  --backgrey: #c0c0c0;
+  --qualityelements: #808080;
+}
+
 html {
   display: flex;
   align-items: center;
@@ -27,6 +32,14 @@ html {
 
 .footer {
   border: 2px solid red;
+}
+
+.quality-check {
+  background-color: var(--backgrey);
+}
+
+.quality-check > * {
+  color: var(--qualityelements);
 }
 
 .footer__autory {
