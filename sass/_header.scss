@@ -1,3 +1,9 @@
 .navigation-bar {
   background-color: red;
+  .navigation-bar__icon {
+    height: 49px;
+    width: 49px;
+    box-sizing: border-box;
+    background-color: #fff;
+  }
 }
