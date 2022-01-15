@@ -1,0 +1,35 @@
+html {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navigation-bar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.navigation-bar {
+  border: 2px solid red;
+}
+
+.content {
+  border: 2px solid green;
+}
+
+.logo {
+  border: 2px solid red;
+}
+
+.article {
+  border: 2px solid blue;
+}
+
+.footer {
+  border: 2px solid red;
+}
+
+.footer__autory {
+  background-color: red;
+  color: white;
+}

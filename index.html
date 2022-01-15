@@ -16,40 +16,74 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="sass/styles.css" />
     <title>Lunarillos</title>
   </head>
   <body>
-    <header class="navigation-bar">
-      <checkbox class="burger"></checkbox>
-      <nav>
-        <li><a href="" class="navigation-bar__icon"></a></li>
-        <li><a href="" class="navigation-bar__icon"></a></li>
-        <li><a href="" class="navigation-bar__icon"></a></li>
-        <li>
-          <a
-            href=""
-            class="navigation-bar__icon navigation-bar__icon--shop-cart"
-            >0</a
-          >
-        </li>
-      </nav>
+    <header class="navigation-bar row">
+      <div class="col-1 offset-3">
+        <checkbox class="burger"></checkbox>
+      </div>
+      <div class="col-1 offset-1">
+        <a href="assets/user.png" class="navigation-bar__icon"></a>
+      </div>
+      <div class="col-3 offset-1">
+        <nav class="list-unstyled">
+          <li>
+            <a href="" class="navigation-bar__icon">
+            <img src="assets/user.png"/>
+            </a>
+          </li>
+          <li>
+            <a href="" class="navigation-bar__icon"></a>
+            <img src="assets/search-solid.svg"/>
+          </li>
+          <li>
+            <a href=""
+              class="navigation-bar__icon navigation-bar__icon--shop-cart"
+              >0</a
+            >
+            <img src="assets/carrito.png"/>
+          </li>
+        </nav>
+      </div>
     </header>
     <main class="content">
-      <header class="Logo">
-        <h1><img src="" alt="Logo corporativo de María Lunarillos" /></h1>
+      <header class="logo">
+        <h1><img src="https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/logo-small.svg" alt="Logo corporativo de María Lunarillos" /></h1>
       </header>
       <section class="article">
         <h2 class="article__title">Fiestas</h2>
-        <h3 class="articlle__subsection-title">Fiestas Temáticas</h3>
-        <h3 class="articlle__subsection-title">Fiestas personajes</h3>
-        <h3 class="articlle__subsection-title">Accesorios para fiestas</h3>
-        <a href="" class="button btn btn-danger">Ver más</a>
+        <div>
+          <h3 class="article__subsection-title">FIESTAS DE ANIVERSARIO</h3>
+          <img src="assets/aniversarios.jpg" />
+        </div>
+        <div>
+          <h3 class="article__subsection-title">HALLOWEEN</h3>
+          <img src="assets/halloween_1.jpg" />
+        </div>
+        <div>
+          <h3 class="article__subsection-title">BODAS</h3>
+          <img src="assets/Bodas.jpg" />
+        </div>
+        <div>
+          <a href="" class="button btn btn-danger">Ver más</a>
+        </div>
+        <div>
+          <p>SECCION NUESTRS MARCAS SOLO VISIBLE EN DESKTOP</p>
+        </div>
       </section>
       <footer class="footer">
         <section class="quality-check"></section>
         <section class="contact"></section>
-        <sectionfooter__autory></section>
+         <span>
+           <p>Iconos social media</p>
+         </span>
+        <sectionfooter__autory>
+          <span class="footer__autory">
+            <p>Copyright C María Lunarillos</p>
+          </span>
+        </section>
       </footer>
     </main>
   </body>
