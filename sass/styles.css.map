@@ -1,5 +1,1 @@
-<<<<<<< HEAD
 {"version":3,"sourceRoot":"","sources":["styles.scss"],"names":[],"mappings":"AAAA;EACE;EACA;;;AAGF;EACE;EACA;EACA;;;AAEF;EACE;EACA;EACA;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE;EACA;EACA;EACA;EACA;;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGF;EACE;EACA;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE;EACA","file":"styles.css"}
-=======
-{"version":3,"sourceRoot":"","sources":["_header.scss","styles.scss"],"names":[],"mappings":"AAAA;EACE;;AACA;EACE;EACA;EACA;EACA;;;ACDJ;EACE;EACA;EACA;;;AAEF;EACE;EACA;EACA;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE;EACA","file":"styles.css"}
->>>>>>> feature/header
