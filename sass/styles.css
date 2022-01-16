@@ -47,7 +47,7 @@ a {
   font-size: 150%;
 }
 .navigation-bar .navigation-bar__icon .user-text {
-  font-size: 70%;
+  font-size: 10px;
   margin: 0 0 0 4px;
   font-weight: 300;
 }
@@ -70,6 +70,16 @@ a {
 }
 .navigation-bar .navigation-bar__icon--shop-cart:hover .shop-cart {
   background: url("https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/sprite.svg") -105px 10px;
+}
+.navigation-bar .social-header {
+  flex-wrap: nowrap;
+}
+.navigation-bar .social-header > * {
+  padding: 0px !important;
+}
+.navigation-bar .media-header {
+  font-size: 15px;
+  justify-content: space-between;
 }
 .navigation-bar .horizontal-link-list {
   height: 100%;
