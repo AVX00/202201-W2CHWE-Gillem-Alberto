@@ -285,6 +285,10 @@ h2 > .brand {
 .article__subsection:first-of-type {
   padding-top: 3rem;
 }
+.article__subsection .image-container {
+  position: relative;
+  width: min-content;
+}
 .article__subsection-title {
   text-align: center;
   font-weight: bold;
