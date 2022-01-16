@@ -8,6 +8,7 @@
 /node_modules
 
 #Sass
+sass
 sass/_header.scss
 sass/styles.css.map
 sass/styles.scss
