@@ -334,6 +334,10 @@ h2 > .brand {
     &:first-of-type {
       padding-top: 3rem;
     }
+    & .image-container {
+      position: relative;
+      width: min-content;
+    }
   }
   &__subsection-title {
     text-align: center;
