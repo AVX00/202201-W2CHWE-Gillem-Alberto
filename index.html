@@ -53,7 +53,6 @@
       ></checkbox>
       <nav class="col-9 row align-items-center">
         <ul class="horizontal-link-list list-unstyled row align-items-center">
-
           <li class="col row d-flex justify-content-center col-md-6">
             <a href="" class="navigation-bar__icon col">
               <i class="fas fa-user-plus"></i>
@@ -86,9 +85,7 @@
               >0</a
             >
           </li>
-
         </ul>
-
       </nav>
     </header>
     <main class="row">
@@ -100,15 +97,17 @@
           />
         </h1>
       </header>
-      <section class="article col-12 col-md-8">
+      <section class="article container d-flex flex-column align-items-center">
         <img
           src="assets/tarta-cumpleanos.png"
           alt="icono de tarto"
           class="section-icon"
         />
-        <h2 class="article__title col-12">Fiestas</h2>
+        <h2 class="article__title col-3">Fiestas</h2>
         <div class="row">
-          <div class="article__subsection col-12 col-md-8">
+          <div
+            class="article__subsection col-12 d-flex flex-column align-items-center"
+          >
             <div class="image-container">
               <img class="subsection-image" src="assets/aniversarios.jpg" />
               <div class="subsection__overlay">
@@ -118,15 +117,21 @@
               </div>
             </div>
           </div>
-          <div class="article__subsection col-12 col-md-8">
-
-            <img src="assets/halloween_1.jpg" />
-            <div class="subsection__overlay">
-              <h3 class="article__subsection-title">HALLOWEEN</h3>
-
+          <div
+            class="article__subsection col-12 d-flex flex-column align-items-center"
+          >
+            <div
+              class="image-container col-12 d-flex flex-column align-items-center"
+            >
+              <img src="assets/halloween_1.jpg" />
+              <div class="subsection__overlay">
+                <h3 class="article__subsection-title">HALLOWEEN</h3>
+              </div>
             </div>
           </div>
-          <div class="article__subsection col-12 col-md-4">
+          <div
+            class="article__subsection col-12 d-flex flex-column align-items-center"
+          >
             <div class="image-container">
               <img src="assets/Bodas.jpg" />
               <div class="subsection__overlay">
@@ -134,14 +139,16 @@
               </div>
             </div>
           </div>
-          <div class="col-12 order-4">
+          <div class="col-12 d-flex justify-content-center">
             <a href="" class="button btn btn-danger">Ver más</a>
           </div>
         </div>
       </section>
-      <section class="brand col-0 col-md-12 d-none d-md-flex">
+      <section
+        class="article brand col-md-12 d-none d-md-flex flex-md-column align-items-center"
+      >
+        <h2 class="article__title">NUESTRAS MARCAS</h2>
         <div>
-          <h2>NUESTRAS MARCAS</h2>
           <ul class="brand-list col-0 col-md-12 list-unstyled">
             <li class="marcas">
               <img src="assets/Nuestras_marcas/Wilton.png" alt="" />

@@ -293,10 +293,6 @@ h2 > .brand {
 }
 
 .article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   padding-top: 2rem;
   position: relative;
   margin-top: 5rem;
@@ -329,6 +325,7 @@ h2 > .brand {
   font-size: 2rem;
   margin: 2rem 0;
   text-align: center;
+  max-width: min-content;
   margin-top: 5rem;
 }
 .article:nth-child(2n) {
