@@ -44,6 +44,11 @@ a {
   align-items: center;
   font-size: 150%;
 }
+.navigation-bar .navigation-bar__icon .user-text {
+  font-size: 70%;
+  margin: 0 0 0 4px;
+  font-weight: 300;
+}
 .navigation-bar .navigation-bar__icon--search {
   background-color: var(--search-bar-bg);
   color: var(--header-bg);
