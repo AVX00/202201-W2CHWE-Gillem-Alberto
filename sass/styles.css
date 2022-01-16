@@ -282,4 +282,12 @@ h2 > .brand {
   padding: 3rem 0;
 }
 
+.suscribete-button {
+  background-color: var(--webred);
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 15px;
+}
+
 /*# sourceMappingURL=styles.css.map */
