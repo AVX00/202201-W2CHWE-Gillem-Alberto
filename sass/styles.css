@@ -8,6 +8,8 @@
   --cart-count-bg: #ff5959;
   --overlay-bg: #ffffffbf;
   --subsection-title-color: #67635f;
+  --secondary: #6199af;
+  --highlight: #f6b436;
 }
 
 html {
@@ -72,6 +74,39 @@ a {
 .navigation-bar .horizontal-link-list {
   height: 100%;
   margin-bottom: 0;
+}
+.navigation-bar .flags {
+  position: absolute;
+  left: 2rem;
+}
+.navigation-bar .flags > * {
+  position: absolute;
+}
+.navigation-bar .flags .flag-item {
+  margin-left: 0.2rem;
+  min-width: fit-content;
+}
+.navigation-bar .flags .flag-item img {
+  width: 55px;
+}
+.navigation-bar .flags .flag-item--maria {
+  background-color: var(--webred);
+  top: 0;
+  padding-top: 4rem;
+}
+.navigation-bar .flags .flag-item--cucute {
+  background-color: var(--secondary);
+  left: 88px;
+}
+.navigation-bar .flags .flag-item--cucute:hover {
+  padding-top: 4rem;
+}
+.navigation-bar .flags .flag-item--mumuchu {
+  background-color: var(--highlight);
+  left: 176px;
+}
+.navigation-bar .flags .flag-item--mumuchu:hover {
+  padding-top: 4rem;
 }
 
 h2 > .brand {
