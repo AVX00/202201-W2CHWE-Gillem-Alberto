@@ -45,7 +45,7 @@ a {
     align-items: center;
     font-size: 150%;
     & .user-text {
-      font-size: 10px;
+      font-size: 1px;
       margin: 0 0 0 4px;
       font-weight: 300;
     }
@@ -196,10 +196,17 @@ h2 > .brand {
   padding-top: 45px;
   background-color: var(--webbackcolor);
 }
+.footer-all {
+  padding-bottom: 15px;
+}
 
 .siguenos {
   font-size: 14px;
   color: var(--qualityelements);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .siguenos-icon {
@@ -235,37 +242,45 @@ h2 > .brand {
     no-repeat;
 }
 
-.subscribe::before {
-  border-bottom: 1px solid darkgrey;
-  margin: 140px 0;
-  width: 420px;
-  padding-bottom: 35px;
-}
-
 .subscribe {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: var(--webbackcolor);
+  padding: auto 0px;
+  margin: auto 0px;
 }
 
 .subscribe-text {
   font-size: 14px;
   color: var(--qualityelements);
+  padding: 15px;
+}
+.input-box {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  &-politica {
+    font-size: 9px;
+    align-items: center;
+  }
 }
 
 .otros {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   color: var(--webred);
   background-color: var(--webbackcolor);
-  padding: 40px;
   & * {
     text-align: center;
-    padding-top: 1rem;
+  }
+  &-list {
+    -ms-flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -282,6 +297,7 @@ h2 > .brand {
   justify-content: center;
   align-items: center;
   font-size: 12px;
+  padding-top: 5px;
 }
 .footer__autory p {
   text-align: center;

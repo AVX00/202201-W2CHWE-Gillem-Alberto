@@ -1,0 +1,13 @@
+#Archivos random
+.DS_Store
+
+#Carpeta husky
+.husky
+
+#node-modules
+/node-modules
+
+#Sass
+sass/_header.scss
+sass/styles.css.map
+sass/styles.scss
