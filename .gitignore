@@ -5,7 +5,7 @@
 .husky
 
 #node-modules
-/node-modules
+/node_modules
 
 #Sass
 sass/_header.scss
