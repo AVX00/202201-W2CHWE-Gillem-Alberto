@@ -2,10 +2,10 @@
 .DS_Store
 
 #Carpeta husky
-.husky
+.husky/
 
 #node-modules
-/node-modules
+node_modules/
 
 #Sass
 sass/_header.scss
