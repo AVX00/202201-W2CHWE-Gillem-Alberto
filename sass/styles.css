@@ -69,7 +69,20 @@ a {
   margin-bottom: 0;
 }
 
-.quality-check {
+h2 > .brand {
+  text-align: center;
+  align-items: center;
+}
+
+.brand-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.marcas .quality-check {
   background-color: var(--backgrey);
   box-sizing: border-box;
   padding-bottom: 2rem;
