@@ -82,7 +82,20 @@ h2 > .brand {
   align-items: center;
 }
 
-.marcas .quality-check {
+.marcas {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  opacity: 0.8;
+  cursor: pointer;
+  margin: 15px;
+  list-style-position: outside;
+}
+
+.marcas:hover {
+  filter: grayscale(0);
+}
+
+.quality-check {
   background-color: var(--backgrey);
   box-sizing: border-box;
   padding-bottom: 2rem;
