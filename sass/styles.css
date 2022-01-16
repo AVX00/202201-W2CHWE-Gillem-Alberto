@@ -307,6 +307,7 @@ h2 > .brand {
   font-size: 2rem;
   margin: 2rem 0;
   text-align: center;
+  max-width: min-content;
   margin-top: 5rem;
 }
 .article:nth-child(2n) {
