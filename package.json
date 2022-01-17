@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
-    "compile-style": "npx sass sass/styles.scss web/styles/style.css ",
+    "compile-style": "npx sass sass/styles.scss styles/style.css ",
     "compile-dev": "npx sass -w /sass/styles.scss web/styles/style.css"
   },
   "keywords": [],
