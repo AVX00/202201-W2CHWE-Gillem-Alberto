@@ -346,7 +346,7 @@ h2 > .brand {
     color: var(--subsection-title-color);
   }
   &__title {
-    padding: 0.8rem 2.8rem;
+    padding: 10px 20px;
     border-top: 2px solid #000;
     border-bottom: 2px solid #000;
     font-size: 2rem;
@@ -354,6 +354,7 @@ h2 > .brand {
     text-align: center;
     max-width: min-content;
     margin-top: 5rem;
+    font-weight: 800;
   }
   &:nth-child(2n) {
     background-color: var(--header-bg);
