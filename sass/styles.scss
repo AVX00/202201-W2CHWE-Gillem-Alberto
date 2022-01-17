@@ -367,7 +367,7 @@ h2 > .brand {
 .search-bar {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-evenly;
   margin-left: 0px;
   height: 24px;
   font-size: 14px;
@@ -391,7 +391,6 @@ h2 > .brand {
   font-weight: bold;
   background-color: #8e789e;
   box-sizing: border-box;
-  //margin-top: 20px;
   padding: 0px;
   justify-content: flex-end;
   align-items: center;
@@ -403,6 +402,7 @@ h2 > .brand {
   align-items: center;
   justify-content: center;
   padding: 15px;
+
   &-aside {
     display: flex;
     flex-direction: row;
