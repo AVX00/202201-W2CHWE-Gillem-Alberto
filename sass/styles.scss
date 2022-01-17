@@ -379,3 +379,56 @@ h2 > .brand {
   border: none;
   padding: 15px;
 }
+
+.image-container {
+  padding: 1rem 0;
+}
+.image {
+  color: var(--qualityelements);
+  height: 147px;
+  width: 350px;
+  position: relative;
+  &__short {
+    background-size: cover;
+    &--personajes {
+      background-image: url(/web/assets/fiestaspersonajes.jpg);
+    }
+    &--tematicas {
+      background-image: url(/web/assets/fiestastematicas.jpg);
+    }
+  }
+  &__subtitle {
+    display: none;
+  }
+  &__tall {
+    &--accesorios {
+      background-image: url(/web/assets/pompones.jpg);
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    a:hover {
+      color: #292725;
+    }
+  }
+}
+.overlay {
+  background-color: #ffffffcc;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  right: 50%;
+  left: 0;
+  bottom: 0;
+  padding: 1rem;
+}
+
+@media (min-width: 600px) {
+  .image {
+    height: 300px;
+    width: 715px;
+  }
+}
