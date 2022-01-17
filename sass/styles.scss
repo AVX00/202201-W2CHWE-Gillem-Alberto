@@ -387,6 +387,7 @@ h2 > .brand {
   color: var(--qualityelements);
   height: 147px;
   width: 350px;
+  margin-bottom: 7.5px;
   position: relative;
   &__short {
     background-size: cover;
@@ -427,8 +428,23 @@ h2 > .brand {
 }
 
 @media (min-width: 600px) {
-  .image {
-    height: 300px;
-    width: 715px;
+  .image-container {
+    display: flex;
+    .image {
+      margin: 0;
+      height: 300px;
+      width: 715px;
+      &__short--tematicas {
+        margin-bottom: 15px;
+      }
+      &__tall {
+        height: 615px;
+        width: 350px;
+        margin-left: 15px;
+        &--accesorios {
+          background-size: cover;
+        }
+      }
+    }
   }
 }
