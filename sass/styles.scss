@@ -326,7 +326,7 @@ h2 > .brand {
   & .section-icon {
     width: 150px;
     position: absolute;
-    top: -7rem;
+    top: -65px;
   }
   &__subsection {
     position: relative;
@@ -364,11 +364,64 @@ h2 > .brand {
   }
 }
 
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-left: 0px;
+  height: 24px;
+  font-size: 14px;
+  margin-top: 25px;
+  margin-right: 25px;
+}
+
+.search-star {
+  color: white;
+  font-weight: bold;
+  background-color: #9faa4c;
+  box-sizing: border-box;
+  padding: 0px;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.search-sharp {
+  color: white;
+  font-weight: bold;
+  background-color: #8e789e;
+  box-sizing: border-box;
+  //margin-top: 20px;
+  padding: 0px;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
 .content-header {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3rem 0;
+  padding: 15px;
+  &-aside {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    font-weight: bold;
+    font-size: 00.8rem;
+    margin: 20px;
+    &-pic {
+      background-color: var(--webbackcolor);
+      height: 100px;
+      width: 100px;
+      box-sizing: border-box;
+      padding: 5px;
+      &:hover {
+        background-color: var(--cart-count-bg);
+      }
+    }
+  }
 }
 
 .suscribete-button {
